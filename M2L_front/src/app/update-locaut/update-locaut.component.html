@@ -1,0 +1,27 @@
+<p>update-locaut works!</p>
+<div class="container">
+    <div>
+    <h2>Modifier un Produit :</h2>
+    </div>
+    <form >
+    <div hiden class="col-sm-2 col-md-2 col-lg-2">
+    <label >ID Locau</label>
+    <input readonly type="text" [(ngModel)]="currentLocau.id"
+    name="idLocau" class="form-control" value="currentLocau.id">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >num bureau</label>
+    <input type="number"[(ngModel)]= "currentLocau.num_bureau"
+    name="numBureau" class="form-control" value="currentLocau.numBureau">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >libre</label>
+    <input type="text" [(ngModel)]= "currentLocau.libre"
+    name="libre" class="form-control" value="currentLocau.libre">
+    </div>
+<div class="mt-2">
+<button type="submit" (click)="updatelocal()" class="btn btn-success">Modifer</button>
+</div>
+</form>
+</div>
+

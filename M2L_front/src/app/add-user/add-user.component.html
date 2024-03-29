@@ -1,0 +1,32 @@
+<p></p>
+<div class="container">
+  <div>
+    <h2>Nouveau ?</h2>
+  </div>
+  <form>
+    <div class="col-2">
+      <label>nom</label>
+      <input type="string" [(ngModel)]="newUser.nom" name="nom" class="form-control">
+    </div>
+
+    <div class="col-2">
+      <label>email</label>
+      <input type="string" [(ngModel)]="newUser.email" name="email" class="form-control">
+    </div>
+
+    <div class="col-2">
+      <label>mots de passe</label>
+      <input type="string" [(ngModel)]="newUser.mdp" name="mdp" class="form-control">
+    </div>
+
+    <div class="col-2">
+      <label >region</label>
+      <input type="string" [(ngModel)]="newUser.region" name="region" class="form-control">
+    </div>
+
+    <div class="col-2">
+      <label>ville</label>
+      <input type="string" [(ngModel)]="newUser.ville" name="ville" class="form-control">
+    </div>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+<div class="container mt-2 ">
+    <div class="card shadow-lg">
+    <div class="card-body ">
+    <table class="table table-info " >
+    <thead>
+    <tr>
+      <th colspan="4">Liste Local</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let l of locau">
+    <tr >
+    <td>{{l.num_bureau}}</td>
+    <td>{{l.libre}}</td>
+    <td><a class="btn btn-danger" (click)="supprimerLocau(l)">Supprimer</a></td>
+    <td><a class="btn btn-success" [routerLink]="['/updateLocau',l.id]">Modifier</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+
